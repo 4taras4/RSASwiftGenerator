@@ -1,0 +1,16 @@
+PODS:
+  - RSASwiftGenerator (0.1.0)
+
+DEPENDENCIES:
+  - RSASwiftGenerator (from `../`)
+
+EXTERNAL SOURCES:
+  RSASwiftGenerator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RSASwiftGenerator: caae3547d8b6c89c38738a8e2b0f95f2a170cf8c
+
+PODFILE CHECKSUM: aca1d658b4c88279ec7f534a2b4e049a7813b8ba
+
+COCOAPODS: 1.4.0
