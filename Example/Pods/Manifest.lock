@@ -1,5 +1,7 @@
 PODS:
-  - RSASwiftGenerator (0.1.0)
+  - CommonCryptoModule (1.0.2)
+  - RSASwiftGenerator (0.1.0):
+    - CommonCryptoModule
 
 DEPENDENCIES:
   - RSASwiftGenerator (from `../`)
@@ -9,7 +11,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RSASwiftGenerator: caae3547d8b6c89c38738a8e2b0f95f2a170cf8c
+  CommonCryptoModule: 63a68b57abed79655b3a01011419bf037a05b0a0
+  RSASwiftGenerator: 72b7f1f57099aad07ccfa54238486b0f34826e58
 
 PODFILE CHECKSUM: aca1d658b4c88279ec7f534a2b4e049a7813b8ba
 

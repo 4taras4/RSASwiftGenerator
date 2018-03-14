@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import RSASwiftGenerator
+//import RSASwiftGenerator
 
 class Tests: XCTestCase {
     

@@ -8,19 +8,19 @@
 
 import Foundation
 import Security
-import CCommonCrypto
+import CommonCryptoModule
 
 // Singleton instance
-private let _singletonInstance = RSASwiftGenerator()
+public let _singletonInstance = RSASwiftGenerator()
 
 // Constants
 public var kRSASwiftGeneratorApplicationTag = "com.bundleid.app"
-private var kRSASwiftGeneratorKeyType = kSecAttrKeyTypeRSA
+public var kRSASwiftGeneratorKeyType = kSecAttrKeyTypeRSA
 public var kRSASwiftGeneratorKeySize = 1024
-private var kRSASwiftGeneratorCypheredBufferSize = 1024
+public var kRSASwiftGeneratorCypheredBufferSize = 1024
 public var kRSASwiftGeneratorSecPadding: SecPadding = .PKCS1
 
-enum CryptoException: Error {
+public enum CryptoException: Error {
     case unknownError
     case duplicateFoundWhileTryingToCreateKey
     case keyNotFound
@@ -36,16 +36,16 @@ enum CryptoException: Error {
     case outOfMemory
 }
 
-class RSASwiftGenerator: NSObject {
+public class RSASwiftGenerator: NSObject {
     
     /** Shared instance */
-    class var shared: RSASwiftGenerator {
+   public class var shared: RSASwiftGenerator {
         return _singletonInstance
     }
     
     // MARK: - Manage keys
     
-    func createSecureKeyPair(_ completion: ((_ success: Bool, _ error: CryptoException?) -> Void)? = nil) {
+   public func createSecureKeyPair(_ completion: ((_ success: Bool, _ error: CryptoException?) -> Void)? = nil) {
         // private key parameters
         let privateKeyParams: [String: AnyObject] = [
             kSecAttrIsPermanent as String: true as AnyObject,
@@ -86,7 +86,7 @@ class RSASwiftGenerator: NSObject {
         }
     }
     
-    func getPublicKeyData() -> Data? {
+   public func getPublicKeyData() -> Data? {
         let parameters = [
             kSecClass as String: kSecClassKey,
             kSecAttrKeyType as String: kSecAttrKeyTypeRSA,
@@ -101,7 +101,7 @@ class RSASwiftGenerator: NSObject {
         } else { return nil }
     }
     
-    func getPublicKeyReference() -> SecKey? {
+   public func getPublicKeyReference() -> SecKey? {
         let parameters = [
             kSecClass as String: kSecClassKey,
             kSecAttrKeyType as String: kSecAttrKeyTypeRSA,
@@ -114,7 +114,7 @@ class RSASwiftGenerator: NSObject {
         if status == errSecSuccess { return ref as! SecKey? } else { return nil }
     }
     
-    func getPrivateKeyReference() -> SecKey? {
+   public func getPrivateKeyReference() -> SecKey? {
         let parameters = [
             kSecClass as String: kSecClassKey,
             kSecAttrKeyClass as String: kSecAttrKeyClassPrivate,
@@ -127,11 +127,11 @@ class RSASwiftGenerator: NSObject {
     }
     
     
-    func keyPairExists() -> Bool {
+   public func keyPairExists() -> Bool {
         return self.getPublicKeyData() != nil
     }
     
-    func deleteSecureKeyPair(_ completion: ((_ success: Bool) -> Void)?) {
+   public func deleteSecureKeyPair(_ completion: ((_ success: Bool) -> Void)?) {
         // private query dictionary
         let deleteQuery = [
             kSecClass as String: kSecClassKey,
@@ -145,7 +145,7 @@ class RSASwiftGenerator: NSObject {
     
     // MARK: - Cypher and decypher methods
     
-    func encryptMessageWithPublicKey(_ message: String, completion: @escaping (_ success: Bool, _ data: Data?, _ error: CryptoException?) -> Void) {
+   public func encryptMessageWithPublicKey(_ message: String, completion: @escaping (_ success: Bool, _ data: Data?, _ error: CryptoException?) -> Void) {
         DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async { () -> Void in
             
             if let publicKeyRef = self.getPublicKeyReference() {
@@ -171,7 +171,7 @@ class RSASwiftGenerator: NSObject {
         }
     }
     
-    func decryptMessageWithPrivateKey(_ encryptedData: Data, completion: @escaping (_ success: Bool, _ result: String?, _ error: CryptoException?) -> Void) {
+   public func decryptMessageWithPrivateKey(_ encryptedData: Data, completion: @escaping (_ success: Bool, _ result: String?, _ error: CryptoException?) -> Void) {
         DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async { () -> Void in
             
             if let privateKeyRef = self.getPrivateKeyReference() {
@@ -203,7 +203,7 @@ class RSASwiftGenerator: NSObject {
     
     // MARK: - Sign and verify signature.
     
-    func signMessageWithPrivateKey(_ message: String, completion: @escaping (_ success: Bool, _ data: Data?, _ error: CryptoException?) -> Void) {
+  public  func signMessageWithPrivateKey(_ message: String, completion: @escaping (_ success: Bool, _ data: Data?, _ error: CryptoException?) -> Void) {
         DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async { () -> Void in
             var error: CryptoException? = nil
             
@@ -243,7 +243,7 @@ class RSASwiftGenerator: NSObject {
         }
     }
     
-    func verifySignaturePublicKey(_ data: Data, signatureData: Data, completion: @escaping (_ success: Bool, _ error: CryptoException?) -> Void) {
+   public func verifySignaturePublicKey(_ data: Data, signatureData: Data, completion: @escaping (_ success: Bool, _ error: CryptoException?) -> Void) {
         DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async { () -> Void in
             var error: CryptoException? = nil
             
