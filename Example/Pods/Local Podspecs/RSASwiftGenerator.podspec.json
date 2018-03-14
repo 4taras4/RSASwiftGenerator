@@ -2,8 +2,9 @@
   "name": "RSASwiftGenerator",
   "version": "0.1.0",
   "summary": "A wrapper for Apple's RSA Generation function written in Swift.",
-  "description": "Generade and manage your RSA keys",
-  "homepage": "https://github.com/Tarik/RSASwiftGenerator",
+  "swift_version": "4.0",
+  "description": "Generade and manage your RSA keys. A wrapper for Apple's RSA Generation function written in Swift.",
+  "homepage": "https://github.com/4taras4/RSASwiftGenerator",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,16 +13,17 @@
     "Tarik": "4taras4@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Tarik/RSASwiftGenerator.git",
+    "git": "https://github.com/4taras4/RSASwiftGenerator.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
+  "requires_arc": true,
   "source_files": "Sources/**/*.swift",
   "xcconfig": {
     "HEADER_SEARCH_PATHS": "$(SDKROOT)/usr/include/libxml2",
-    "SWIFT_INCLUDE_PATHS": "$(PODS_ROOT)/Sources/CCommonCrypto"
+    "SWIFT_INCLUDE_PATHS": "$(PODS_ROOT)/RSASwiftGenerator/Sources/CCommonCrypto"
   },
   "preserve_paths": "Sources/CCommonCrypto/module.modulemap"
 }
