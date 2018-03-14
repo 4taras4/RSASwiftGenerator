@@ -17,13 +17,13 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.3"
+  },
+  "dependencies": {
+    "CommonCryptoModule": [
+
+    ]
   },
   "requires_arc": true,
-  "source_files": "Sources/**/*.swift",
-  "xcconfig": {
-    "HEADER_SEARCH_PATHS": "$(SDKROOT)/usr/include/libxml2",
-    "SWIFT_INCLUDE_PATHS": "$(PODS_ROOT)/RSASwiftGenerator/Sources/CCommonCrypto"
-  },
-  "preserve_paths": "Sources/CCommonCrypto/module.modulemap"
+  "source_files": "Sources/**/*.swift"
 }

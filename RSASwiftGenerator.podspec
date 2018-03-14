@@ -27,13 +27,13 @@ Pod::Spec.new do |s|
   s.author           = { 'Tarik' => '4taras4@gmail.com' }
   s.source           = { :git => 'https://github.com/4taras4/RSASwiftGenerator.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.ios.deployment_target = '8.0'
-  # s.dependency 'CommonCryptoSwift'
+  s.ios.deployment_target = '9.3'
+  s.dependency 'CommonCryptoModule'
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/RSASwiftGenerator/Sources/CCommonCrypto' }
-  s.preserve_paths = 'Sources/CCommonCrypto/module.modulemap'
-
+  # s.xcconfig = { 'SWIFT_INCLUDE_PATHS' =>
+  # '$(PODS_ROOT)/RSASwiftGenerator/Sources/CCommonCrypto' }
+  # s.preserve_paths = 'Sources/CCommonCrypto/module.modulemap'
  #  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Sources/CCommonCrypto',
  #      'SWIFT_VERSION' => '4.0'
  # }
