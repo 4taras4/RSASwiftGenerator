@@ -2,7 +2,7 @@
   "name": "RSASwiftGenerator",
   "version": "0.1.0",
   "summary": "A wrapper for Apple's RSA Generation function written in Swift.",
-  "swift_version": "4.0",
+  "swift_versions": "5.0",
   "description": "Generade and manage your RSA keys. A wrapper for Apple's RSA Generation function written in Swift.",
   "homepage": "https://github.com/4taras4/RSASwiftGenerator",
   "license": {
@@ -25,5 +25,6 @@
     ]
   },
   "requires_arc": true,
-  "source_files": "Sources/**/*.swift"
+  "source_files": "Sources/**/*.swift",
+  "swift_version": "5.0"
 }

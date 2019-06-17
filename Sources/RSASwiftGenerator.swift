@@ -164,7 +164,7 @@ public class RSASwiftGenerator: NSObject {
                 // analyze results and call the completion in main thread
                 DispatchQueue.main.async(execute: { () -> Void in
                     completion(status == errSecSuccess, cipherData, status == errSecSuccess ? nil : .unableToEncrypt)
-                    cipherText.deinitialize()
+                    cipherText.deinitialize(count: cipherTextLen)
                 })
                 return
             } else { DispatchQueue.main.async(execute: { completion(false, nil, .keyNotFound) }) }
@@ -194,7 +194,7 @@ public class RSASwiftGenerator: NSObject {
                             completion(true, string, nil)
                         } else { completion(false, nil, .unableToDecrypt) }
                     } else { completion(false, nil, .unableToDecrypt) }
-                    plainText.deinitialize()
+                    plainText.deinitialize(count: plainTextLen)
                 })
                 return
             } else { DispatchQueue.main.async(execute: { completion(false, nil, .keyNotFound) }) }
@@ -227,7 +227,7 @@ public class RSASwiftGenerator: NSObject {
                     let status = SecKeyRawSign(privateKeyRef, SecPadding.PKCS1SHA1, hash, hashData.count, resultPointer, &resultLength)
                     if status != errSecSuccess { error = .unableToEncrypt }
                     else { resultData.count = resultLength }
-                    hash.deinitialize()
+                    hash.deinitialize(count: hashData.count)
                 } else { error = .wrongInputDataFormat }
                 
                 // analyze results and call the completion in main thread
@@ -263,7 +263,7 @@ public class RSASwiftGenerator: NSObject {
                 if status != errSecSuccess { error = .unableToDecrypt }
                 
                 // analyze results and call the completion in main thread
-                hash.deinitialize()
+                hash.deinitialize(count: hashData.count)
                 DispatchQueue.main.async(execute: { () -> Void in
                     completion(status == errSecSuccess, error)
                 })
