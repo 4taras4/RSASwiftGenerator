@@ -31,9 +31,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
   s.ios.deployment_target = '10.0'
-  s.osx.deployment_target = '10.12'
-  s.tvos.deployment_target = '9.0'
-  s.watchos.deployment_target = '4.0'
+  s.osx.deployment_target = '10.15'
 
   s.pod_target_xcconfig = {       
     'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/Sources/' 
