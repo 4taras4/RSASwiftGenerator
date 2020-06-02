@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RSASwiftGenerator'
-  s.version          = '1.0.1'
+  s.version          = '1.0.0'
   s.summary          = "A wrapper for Apple's RSA Generation function written in Swift."
   s.swift_version    = '5.0'
 # This description is used to generate tags and improve search results.
@@ -27,11 +27,11 @@ Pod::Spec.new do |s|
   s.author           = { 'Tarik' => '4taras4@gmail.com' }
   s.source           = { :git => 'https://github.com/4taras4/RSASwiftGenerator.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.ios.deployment_target = '9.3'
+  s.ios.deployment_target = '10.0'
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
-  s.ios.deployment_target = '9.0'
-  s.osx.deployment_target = '10.9'
+  s.ios.deployment_target = '10.0'
+  s.osx.deployment_target = '10.12'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '4.0'
 
