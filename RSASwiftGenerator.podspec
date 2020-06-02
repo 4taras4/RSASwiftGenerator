@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RSASwiftGenerator'
-  s.version          = '1.0.3'
+  s.version          = '1.0.5'
   s.summary          = "A wrapper for Apple's RSA Generation function written in Swift."
   s.swift_version    = '5.0'
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
   s.ios.deployment_target = '10.0'
-  s.osx.deployment_target = '10.15'
 
   s.pod_target_xcconfig = {       
     'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/Sources/' 
