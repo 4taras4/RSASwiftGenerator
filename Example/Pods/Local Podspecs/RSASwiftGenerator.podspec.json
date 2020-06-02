@@ -1,6 +1,6 @@
 {
   "name": "RSASwiftGenerator",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "A wrapper for Apple's RSA Generation function written in Swift.",
   "swift_versions": "5.0",
   "description": "Generade and manage your RSA keys. A wrapper for Apple's RSA Generation function written in Swift.",
@@ -14,17 +14,19 @@
   },
   "source": {
     "git": "https://github.com/4taras4/RSASwiftGenerator.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "9.3"
-  },
-  "dependencies": {
-    "CommonCryptoModule": [
-
-    ]
+    "ios": "9.0",
+    "osx": "10.9",
+    "tvos": "9.0",
+    "watchos": "4.0"
   },
   "requires_arc": true,
   "source_files": "Sources/**/*.swift",
+  "pod_target_xcconfig": {
+    "SWIFT_INCLUDE_PATHS": "$(SRCROOT)/Sources/"
+  },
+  "resources": "Sources/*.{h,modulemap}",
   "swift_version": "5.0"
 }

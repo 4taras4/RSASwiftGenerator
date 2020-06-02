@@ -1,23 +1,16 @@
 PODS:
-  - CommonCryptoModule (1.0.2)
-  - RSASwiftGenerator (0.1.0):
-    - CommonCryptoModule
+  - RSASwiftGenerator (1.0.0)
 
 DEPENDENCIES:
   - RSASwiftGenerator (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - CommonCryptoModule
 
 EXTERNAL SOURCES:
   RSASwiftGenerator:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CommonCryptoModule: 63a68b57abed79655b3a01011419bf037a05b0a0
-  RSASwiftGenerator: 5380bd2fb67741fbe4e69c1bbac6ecf0c7c8c3dc
+  RSASwiftGenerator: 737c8a6af305945bba834022c07998dd8f6eb2a3
 
 PODFILE CHECKSUM: aca1d658b4c88279ec7f534a2b4e049a7813b8ba
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.9.1

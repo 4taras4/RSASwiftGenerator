@@ -8,7 +8,7 @@
 
 import Foundation
 import Security
-import CommonCryptoModule
+import CommonCrypto
 
 // Singleton instance
 public let _singletonInstance = RSASwiftGenerator()

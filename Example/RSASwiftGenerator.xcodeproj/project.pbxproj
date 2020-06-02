@@ -30,7 +30,7 @@
 		05C9B0D5C05A07ADB001B40B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1A07D478D2CDB16310E91597 /* Pods-RSASwiftGenerator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSASwiftGenerator_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSASwiftGenerator_Example/Pods-RSASwiftGenerator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1D03DD33F6C0135CD03EB7B6 /* Pods-RSASwiftGenerator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSASwiftGenerator_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSASwiftGenerator_Example/Pods-RSASwiftGenerator_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4F4830D68157FCE6108FDDD9 /* RSASwiftGenerator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RSASwiftGenerator.podspec; path = ../RSASwiftGenerator.podspec; sourceTree = "<group>"; };
+		4F4830D68157FCE6108FDDD9 /* RSASwiftGenerator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RSASwiftGenerator.podspec; path = ../RSASwiftGenerator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* RSASwiftGenerator_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSASwiftGenerator_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -279,12 +279,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RSASwiftGenerator_Example/Pods-RSASwiftGenerator_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CommonCryptoModule/CommonCryptoModule.framework",
 				"${BUILT_PRODUCTS_DIR}/RSASwiftGenerator/RSASwiftGenerator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonCryptoModule.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSASwiftGenerator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

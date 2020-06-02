@@ -13,18 +13,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        RSASwiftGenerator.shared.createSecureKeyPair() { (succes,error) in
-            print(succes,error)
-        } // generade new key pair
-        RSASwiftGenerator.shared.keyPairExists() // check keys for exist
-        RSASwiftGenerator.shared.getPublicKeyData() // get  Data refference as public key
-        RSASwiftGenerator.shared.getPublicKeyReference() // / get SecKey refference for public key
-        RSASwiftGenerator.shared.getPrivateKeyReference() // get SecKey refference for private key
-        RSASwiftGenerator.shared.deleteSecureKeyPair() { (succes) in
-            print(succes)
-        }// remove keys from keychain
         kRSASwiftGeneratorApplicationTag = "MY.BUNDLE.ID" //setup your id for keychain saving
-        
+
+        RSASwiftGenerator.shared.createSecureKeyPair() { (success,error) in
+            print(success,error)
+            if success {
+                print(  RSASwiftGenerator.shared.getPublicKeyData(), // get  Data refference as public key
+                        RSASwiftGenerator.shared.getPublicKeyReference(), // / get SecKey refference for public key
+                        RSASwiftGenerator.shared.getPrivateKeyReference()) // get SecKey refference for private key)
+            }
+        } // generade new key  pair
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,188 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		024EFE6684B07E3438702307F4B76FA6 /* CommonCryptoBridge.h in Resources */ = {isa = PBXBuildFile; fileRef = 468CFAF7862C92AD230BA644F37DDE37 /* CommonCryptoBridge.h */; };
-		0C36C4FF128ECFFE5A8962B9A58EF87D /* Pods-RSASwiftGenerator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 562CA4BBD74C772D1EE6966EAE340193 /* Pods-RSASwiftGenerator_Example-dummy.m */; };
-		1C8998DD7B468E1EC8D79961E0D04B4B /* CommonCryptoModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DFCAD80392214BAA69921E9DCC1D763 /* CommonCryptoModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31049DD4069495FA490E3745644739A7 /* RSASwiftGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4AEC65980D127CEFA4A55F3AA4B955 /* RSASwiftGenerator.swift */; };
-		3A56D83F4D4D8AC4301D873B320D93AC /* RSASwiftGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3347B4B40B212B6A3477A48472EACEF0 /* RSASwiftGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A885DA4B95E2D082A0A4E9743272953 /* module.modulemap in Resources */ = {isa = PBXBuildFile; fileRef = E4367CE58FE1013706E0C260F9AE9294 /* module.modulemap */; };
-		3ECB756634A8D9A80D5E3A9E631BCFA3 /* CommonCryptoModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955C0BB6A39B6AF8F8B5F1320DA856FA /* CommonCryptoModule.framework */; };
-		8DCAF2E4D0257FB1082CA807E127885C /* RSASwiftGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F36FF8535F1C27AF8C7449AC266287B /* RSASwiftGenerator-dummy.m */; };
-		A17CA4A76C5E771C25CF3D8404F90263 /* CommonCryptoModule.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A1CA7F4EB045BE94B4B8D7BC2CA038 /* CommonCryptoModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4DF9F45F4D4261678F95E457DF79C41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B513E5CFBA4B9404F46A0E804A26D904 /* Foundation.framework */; };
-		B183BBF58F4836C007E178EF7E1C85F3 /* Pods-RSASwiftGenerator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A799E4920C7740E9BBA7694EA691C543 /* Pods-RSASwiftGenerator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B29873BB812723717875C33ED868E180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B513E5CFBA4B9404F46A0E804A26D904 /* Foundation.framework */; };
-		C876B1FFDF659032D29672C3BF57B4F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B513E5CFBA4B9404F46A0E804A26D904 /* Foundation.framework */; };
-		E1CD1C73391BFC3566325208FA71D369 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E11888FFFD552833FD1E14B2D3656B /* Empty.swift */; };
-		E7D05CCB577C2F7FDDA78462333AFAB8 /* CommonCryptoModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70318EBA06C429ED880E2D06F9986339 /* CommonCryptoModule-dummy.m */; };
+		02517146ED38E07E46634380257579A6 /* RSASwiftGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC6F012FFDE927A7A1A8E5C6253C87D /* RSASwiftGenerator.swift */; };
+		0310FE2CA16DEBCFAFC4224E23210AF5 /* CommonCryptoBridge.h in Resources */ = {isa = PBXBuildFile; fileRef = 7617DBD5936E1316CF5D42CB843C4407 /* CommonCryptoBridge.h */; };
+		1187AC70908EA5DF0DB9CDF02FC20664 /* RSASwiftGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E1017048C55ED1F17453979AB1F434 /* RSASwiftGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		184E93E39923457CD7BE686AC8CB7818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1F23D9EE332DDA18FABD938DCFA23B24 /* Pods-RSASwiftGenerator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A799E4920C7740E9BBA7694EA691C543 /* Pods-RSASwiftGenerator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DBCC09CCB8237CA2CC0338FB40FE997 /* module.modulemap in Resources */ = {isa = PBXBuildFile; fileRef = 64DE88E667083E1A4F0517812C7FF611 /* module.modulemap */; };
+		C1F6700BB47F2D8E41B178C4869D78E1 /* Pods-RSASwiftGenerator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 562CA4BBD74C772D1EE6966EAE340193 /* Pods-RSASwiftGenerator_Example-dummy.m */; };
+		E2F3FDA34E9509D2496DD0D3C16A2FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		FE159FD4B5536A2D0A9B2BDFEAE312DE /* RSASwiftGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAED09DC21E72E84938F4BDF7904C126 /* RSASwiftGenerator-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		324B48F1FB668845DB583DDDE07008DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F873DBDB75724609A91372EB5EBD847;
-			remoteInfo = CommonCryptoModule;
-		};
-		83A2C41D96EB372963AC9E43D7040311 /* PBXContainerItemProxy */ = {
+		163904B3EF7CCE630A9BC0E034100B30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5FDA07FFD914173CBC8371EC756BDA0A;
 			remoteInfo = RSASwiftGenerator;
 		};
-		DDF32F40C2F0CFE86B11A9DEDFAA1E3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F873DBDB75724609A91372EB5EBD847;
-			remoteInfo = CommonCryptoModule;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E6F51CC64547D69D1F033658D0CC799 /* RSASwiftGenerator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RSASwiftGenerator-Info.plist"; sourceTree = "<group>"; };
 		15E3455281480E7D64B51CCEE96FA9B2 /* Pods-RSASwiftGenerator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSASwiftGenerator_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1BB7F10E5AEB86A9AEC9D36BC888B1F7 /* CommonCryptoModule.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CommonCryptoModule.xcconfig; sourceTree = "<group>"; };
-		3347B4B40B212B6A3477A48472EACEF0 /* RSASwiftGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSASwiftGenerator-umbrella.h"; sourceTree = "<group>"; };
-		3DFCAD80392214BAA69921E9DCC1D763 /* CommonCryptoModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonCryptoModule-umbrella.h"; sourceTree = "<group>"; };
-		468CFAF7862C92AD230BA644F37DDE37 /* CommonCryptoBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CommonCryptoBridge.h; path = CommonCryptoModule/CommonCryptoBridge/CommonCryptoBridge.h; sourceTree = "<group>"; };
+		1C40ED817A4F170496225532AEE9C07B /* RSASwiftGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RSASwiftGenerator.modulemap; sourceTree = "<group>"; };
+		1DAE6E0D80389C622D7CAC99B9E8AAFC /* RSASwiftGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSASwiftGenerator.release.xcconfig; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		46A61AC5E681721B46F73678FE087DCC /* Pods-RSASwiftGenerator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RSASwiftGenerator_Example.modulemap"; sourceTree = "<group>"; };
-		47C55CCB46F4AAEB7D7FD4AC9828D5A7 /* RSASwiftGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSASwiftGenerator-prefix.pch"; sourceTree = "<group>"; };
 		562CA4BBD74C772D1EE6966EAE340193 /* Pods-RSASwiftGenerator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RSASwiftGenerator_Example-dummy.m"; sourceTree = "<group>"; };
-		5CFE70637F28874B4E0F044240E899DA /* CommonCryptoModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CommonCryptoModule.modulemap; sourceTree = "<group>"; };
 		64AB2467A54FAB90020B059CB61553B3 /* Pods-RSASwiftGenerator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RSASwiftGenerator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		676609B4BA01018953375EF4886A07D2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		70318EBA06C429ED880E2D06F9986339 /* CommonCryptoModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CommonCryptoModule-dummy.m"; sourceTree = "<group>"; };
-		78A8A8D683F78FCA8D84680E3659D4CD /* CommonCryptoModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CommonCryptoModule.framework; path = CommonCryptoModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F7CF1FF9670FF42C511E88D2D261CAF /* RSASwiftGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RSASwiftGenerator.modulemap; sourceTree = "<group>"; };
-		8046B3ABF96B3171E77B77406127269C /* CommonCryptoModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CommonCryptoModule-Info.plist"; sourceTree = "<group>"; };
+		64DE88E667083E1A4F0517812C7FF611 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = module.modulemap; path = Sources/module.modulemap; sourceTree = "<group>"; };
+		6C7B5ECD604ACBB9C6077E03D066318A /* RSASwiftGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSASwiftGenerator-prefix.pch"; sourceTree = "<group>"; };
+		7617DBD5936E1316CF5D42CB843C4407 /* CommonCryptoBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CommonCryptoBridge.h; path = Sources/CommonCryptoBridge.h; sourceTree = "<group>"; };
+		778A6A9741E1AA8A0152AA605623D8C0 /* RSASwiftGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSASwiftGenerator.debug.xcconfig; sourceTree = "<group>"; };
+		7EC6F012FFDE927A7A1A8E5C6253C87D /* RSASwiftGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSASwiftGenerator.swift; path = Sources/RSASwiftGenerator.swift; sourceTree = "<group>"; };
 		8242C9298586E92D2E883A87993C1AC3 /* Pods-RSASwiftGenerator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSASwiftGenerator_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8C4AEC65980D127CEFA4A55F3AA4B955 /* RSASwiftGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSASwiftGenerator.swift; path = Sources/RSASwiftGenerator.swift; sourceTree = "<group>"; };
 		8F2B2F21E67E99C7196CEC0BC743709E /* Pods-RSASwiftGenerator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RSASwiftGenerator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8F36FF8535F1C27AF8C7449AC266287B /* RSASwiftGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSASwiftGenerator-dummy.m"; sourceTree = "<group>"; };
-		955C0BB6A39B6AF8F8B5F1320DA856FA /* CommonCryptoModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCryptoModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E1017048C55ED1F17453979AB1F434 /* RSASwiftGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSASwiftGenerator-umbrella.h"; sourceTree = "<group>"; };
 		9D83C5A50C64E6C345DDB64D5460AAE6 /* Pods-RSASwiftGenerator_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RSASwiftGenerator_Example-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A799E4920C7740E9BBA7694EA691C543 /* Pods-RSASwiftGenerator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RSASwiftGenerator_Example-umbrella.h"; sourceTree = "<group>"; };
-		B513E5CFBA4B9404F46A0E804A26D904 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BD825C3B9C88CE4940DFC7058022960A /* RSASwiftGenerator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RSASwiftGenerator-Info.plist"; sourceTree = "<group>"; };
 		C4400F4A37EBB7E3C6B5E48D74892F3D /* Pods_RSASwiftGenerator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RSASwiftGenerator_Example.framework; path = "Pods-RSASwiftGenerator_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3A2758AD3C63E3DA7B19A8C5D53F57B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		E4367CE58FE1013706E0C260F9AE9294 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = module.modulemap; path = CommonCryptoModule/CommonCryptoBridge/module.modulemap; sourceTree = "<group>"; };
-		E4E8D44987A06996E8EEC6B0C38E6FA5 /* RSASwiftGenerator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RSASwiftGenerator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CAED09DC21E72E84938F4BDF7904C126 /* RSASwiftGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSASwiftGenerator-dummy.m"; sourceTree = "<group>"; };
+		DB9C1F419879F4F3446C0573393B71C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E6B68F7110E4721DA6553187053254F0 /* RSASwiftGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RSASwiftGenerator.framework; path = RSASwiftGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7A1CA7F4EB045BE94B4B8D7BC2CA038 /* CommonCryptoModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CommonCryptoModule.h; path = CommonCryptoModule/CommonCryptoModule.h; sourceTree = "<group>"; };
+		EE2833E05B3FD5C8864BBCCB3111B29A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		F298C4DF7227F70A68E59044F9BCFDF2 /* Pods-RSASwiftGenerator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RSASwiftGenerator_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F4CCB3EE920BEA9319B57D67C13F4A3C /* RSASwiftGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSASwiftGenerator.xcconfig; sourceTree = "<group>"; };
-		F9E11888FFFD552833FD1E14B2D3656B /* Empty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Empty.swift; path = CommonCryptoModule/Empty.swift; sourceTree = "<group>"; };
-		FDC4B73B6991763F86CE864FC2EC0E9B /* CommonCryptoModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonCryptoModule-prefix.pch"; sourceTree = "<group>"; };
+		F7FA3A7CA60C98ACFD9AF4DA44AC3CF3 /* RSASwiftGenerator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RSASwiftGenerator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00E7A256ECBA55B480D64D1167F127DA /* Frameworks */ = {
+		6527C7F06C2A89DF4A962DECFB7979B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ECB756634A8D9A80D5E3A9E631BCFA3 /* CommonCryptoModule.framework in Frameworks */,
-				A4DF9F45F4D4261678F95E457DF79C41 /* Foundation.framework in Frameworks */,
+				E2F3FDA34E9509D2496DD0D3C16A2FD8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		419289ABDC472C9634C5361F53E61C69 /* Frameworks */ = {
+		E83657E4F143E0897843382EA3CABB3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B29873BB812723717875C33ED868E180 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E260C1C08C97FF0AAD2726D0854FFFA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C876B1FFDF659032D29672C3BF57B4F7 /* Foundation.framework in Frameworks */,
+				184E93E39923457CD7BE686AC8CB7818 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29A7880F1032DB0D0DFE902CFB4F8246 /* Support Files */ = {
+		4F736177724753ACAF742469655A441C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F7CF1FF9670FF42C511E88D2D261CAF /* RSASwiftGenerator.modulemap */,
-				F4CCB3EE920BEA9319B57D67C13F4A3C /* RSASwiftGenerator.xcconfig */,
-				8F36FF8535F1C27AF8C7449AC266287B /* RSASwiftGenerator-dummy.m */,
-				0E6F51CC64547D69D1F033658D0CC799 /* RSASwiftGenerator-Info.plist */,
-				47C55CCB46F4AAEB7D7FD4AC9828D5A7 /* RSASwiftGenerator-prefix.pch */,
-				3347B4B40B212B6A3477A48472EACEF0 /* RSASwiftGenerator-umbrella.h */,
+				C4400F4A37EBB7E3C6B5E48D74892F3D /* Pods_RSASwiftGenerator_Example.framework */,
+				E6B68F7110E4721DA6553187053254F0 /* RSASwiftGenerator.framework */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/RSASwiftGenerator";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		39488C492E6B3491DF24FB33AEE5714B /* CommonCryptoModule */ = {
+		5BEE9072E58A72C4ACF5F32DA90DB501 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				E7A1CA7F4EB045BE94B4B8D7BC2CA038 /* CommonCryptoModule.h */,
-				F9E11888FFFD552833FD1E14B2D3656B /* Empty.swift */,
-				93BFB9DF51BB16BBFA804BAA6F6CE042 /* Resources */,
-				6D583876F41A30F2E176191ED3FD978F /* Support Files */,
-			);
-			name = CommonCryptoModule;
-			path = CommonCryptoModule;
-			sourceTree = "<group>";
-		};
-		3BA76D019AF76EFAA7FB9C9470AEAB26 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				955C0BB6A39B6AF8F8B5F1320DA856FA /* CommonCryptoModule.framework */,
-				DF5B475BEBBF187E56E1AA6B08C4C4D7 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3E83DACF19A6AFC5B3A0DEF166DC5F0B /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				676609B4BA01018953375EF4886A07D2 /* LICENSE */,
-				E3A2758AD3C63E3DA7B19A8C5D53F57B /* README.md */,
-				E4E8D44987A06996E8EEC6B0C38E6FA5 /* RSASwiftGenerator.podspec */,
+				DB9C1F419879F4F3446C0573393B71C5 /* LICENSE */,
+				EE2833E05B3FD5C8864BBCCB3111B29A /* README.md */,
+				F7FA3A7CA60C98ACFD9AF4DA44AC3CF3 /* RSASwiftGenerator.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		6D583876F41A30F2E176191ED3FD978F /* Support Files */ = {
+		64764581B5FEEEF749F7CD8201EA7CFF /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5CFE70637F28874B4E0F044240E899DA /* CommonCryptoModule.modulemap */,
-				1BB7F10E5AEB86A9AEC9D36BC888B1F7 /* CommonCryptoModule.xcconfig */,
-				70318EBA06C429ED880E2D06F9986339 /* CommonCryptoModule-dummy.m */,
-				8046B3ABF96B3171E77B77406127269C /* CommonCryptoModule-Info.plist */,
-				FDC4B73B6991763F86CE864FC2EC0E9B /* CommonCryptoModule-prefix.pch */,
-				3DFCAD80392214BAA69921E9DCC1D763 /* CommonCryptoModule-umbrella.h */,
+				E3FA95AECC6E11E7ED172BF8D75358A0 /* RSASwiftGenerator */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CommonCryptoModule";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		93BFB9DF51BB16BBFA804BAA6F6CE042 /* Resources */ = {
+		A5897D7B435BA0CA294B67C461508D5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				468CFAF7862C92AD230BA644F37DDE37 /* CommonCryptoBridge.h */,
-				E4367CE58FE1013706E0C260F9AE9294 /* module.modulemap */,
+				7617DBD5936E1316CF5D42CB843C4407 /* CommonCryptoBridge.h */,
+				64DE88E667083E1A4F0517812C7FF611 /* module.modulemap */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		A461FAC3B2B6B91A1763ABCD2D770851 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				39488C492E6B3491DF24FB33AEE5714B /* CommonCryptoModule */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		AC5FA1702B69642053A0A7D6631B3C24 /* Targets Support Files */ = {
@@ -216,117 +138,94 @@
 			path = "Target Support Files/Pods-RSASwiftGenerator_Example";
 			sourceTree = "<group>";
 		};
-		B37B9E0065DFC45FC4E80A0DCF985E34 /* Development Pods */ = {
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C7395F3E4CB56BB7620F28D64A6F80CB /* RSASwiftGenerator */,
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		C7395F3E4CB56BB7620F28D64A6F80CB /* RSASwiftGenerator */ = {
-			isa = PBXGroup;
-			children = (
-				8C4AEC65980D127CEFA4A55F3AA4B955 /* RSASwiftGenerator.swift */,
-				3E83DACF19A6AFC5B3A0DEF166DC5F0B /* Pod */,
-				29A7880F1032DB0D0DFE902CFB4F8246 /* Support Files */,
-			);
-			name = RSASwiftGenerator;
-			path = ../..;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B37B9E0065DFC45FC4E80A0DCF985E34 /* Development Pods */,
-				3BA76D019AF76EFAA7FB9C9470AEAB26 /* Frameworks */,
-				A461FAC3B2B6B91A1763ABCD2D770851 /* Pods */,
-				EAE75A6598B8AE6356143EB8DB90ACF6 /* Products */,
+				64764581B5FEEEF749F7CD8201EA7CFF /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4F736177724753ACAF742469655A441C /* Products */,
 				AC5FA1702B69642053A0A7D6631B3C24 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		DF5B475BEBBF187E56E1AA6B08C4C4D7 /* iOS */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B513E5CFBA4B9404F46A0E804A26D904 /* Foundation.framework */,
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EAE75A6598B8AE6356143EB8DB90ACF6 /* Products */ = {
+		DE2A1380A63C44F16D21366BCF2C296B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				78A8A8D683F78FCA8D84680E3659D4CD /* CommonCryptoModule.framework */,
-				C4400F4A37EBB7E3C6B5E48D74892F3D /* Pods_RSASwiftGenerator_Example.framework */,
-				E6B68F7110E4721DA6553187053254F0 /* RSASwiftGenerator.framework */,
+				1C40ED817A4F170496225532AEE9C07B /* RSASwiftGenerator.modulemap */,
+				CAED09DC21E72E84938F4BDF7904C126 /* RSASwiftGenerator-dummy.m */,
+				BD825C3B9C88CE4940DFC7058022960A /* RSASwiftGenerator-Info.plist */,
+				6C7B5ECD604ACBB9C6077E03D066318A /* RSASwiftGenerator-prefix.pch */,
+				93E1017048C55ED1F17453979AB1F434 /* RSASwiftGenerator-umbrella.h */,
+				778A6A9741E1AA8A0152AA605623D8C0 /* RSASwiftGenerator.debug.xcconfig */,
+				1DAE6E0D80389C622D7CAC99B9E8AAFC /* RSASwiftGenerator.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RSASwiftGenerator";
+			sourceTree = "<group>";
+		};
+		E3FA95AECC6E11E7ED172BF8D75358A0 /* RSASwiftGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				7EC6F012FFDE927A7A1A8E5C6253C87D /* RSASwiftGenerator.swift */,
+				5BEE9072E58A72C4ACF5F32DA90DB501 /* Pod */,
+				A5897D7B435BA0CA294B67C461508D5A /* Resources */,
+				DE2A1380A63C44F16D21366BCF2C296B /* Support Files */,
+			);
+			name = RSASwiftGenerator;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		05BA755B3A27EAC365FDC099D100AA21 /* Headers */ = {
+		843EBBD04471B3BB4121F8086ADB08BA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B183BBF58F4836C007E178EF7E1C85F3 /* Pods-RSASwiftGenerator_Example-umbrella.h in Headers */,
+				1F23D9EE332DDA18FABD938DCFA23B24 /* Pods-RSASwiftGenerator_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1936A973F02EAADDC4CE43788D12F2E9 /* Headers */ = {
+		A2BF5C02D3EDAD2A924934F799A70FF5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C8998DD7B468E1EC8D79961E0D04B4B /* CommonCryptoModule-umbrella.h in Headers */,
-				A17CA4A76C5E771C25CF3D8404F90263 /* CommonCryptoModule.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7FF9C21EA7D60103C07E76F2338BEAD5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A56D83F4D4D8AC4301D873B320D93AC /* RSASwiftGenerator-umbrella.h in Headers */,
+				1187AC70908EA5DF0DB9CDF02FC20664 /* RSASwiftGenerator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2F873DBDB75724609A91372EB5EBD847 /* CommonCryptoModule */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 25BB4A5209C7FEAA43A19E72B01A76AA /* Build configuration list for PBXNativeTarget "CommonCryptoModule" */;
-			buildPhases = (
-				1936A973F02EAADDC4CE43788D12F2E9 /* Headers */,
-				3331BD8DE2B5A1402C21CB01148AF9EC /* Sources */,
-				7E260C1C08C97FF0AAD2726D0854FFFA /* Frameworks */,
-				B04F79603A98D8EF7E1821428A621BA7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CommonCryptoModule;
-			productName = CommonCryptoModule;
-			productReference = 78A8A8D683F78FCA8D84680E3659D4CD /* CommonCryptoModule.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		5FDA07FFD914173CBC8371EC756BDA0A /* RSASwiftGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0DF415DD3F124644F3BF88A309D56A3 /* Build configuration list for PBXNativeTarget "RSASwiftGenerator" */;
+			buildConfigurationList = 66FAF08CDE0838E1A26FC12BCE557F90 /* Build configuration list for PBXNativeTarget "RSASwiftGenerator" */;
 			buildPhases = (
-				7FF9C21EA7D60103C07E76F2338BEAD5 /* Headers */,
-				43F5C439EA4416AEE232996377A29B84 /* Sources */,
-				00E7A256ECBA55B480D64D1167F127DA /* Frameworks */,
-				82FF83D2E7E157AA58EDD67EB05B700C /* Resources */,
+				A2BF5C02D3EDAD2A924934F799A70FF5 /* Headers */,
+				B0C28BEE103B50C19664929D692271FB /* Sources */,
+				6527C7F06C2A89DF4A962DECFB7979B1 /* Frameworks */,
+				93A00B71B9FEB99D7D88CD055BA18E77 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E50877F75C4F565BDBE9C11056822F5C /* PBXTargetDependency */,
 			);
 			name = RSASwiftGenerator;
 			productName = RSASwiftGenerator;
@@ -335,18 +234,17 @@
 		};
 		98FE381A054BDB07489643FAC9DCDFA6 /* Pods-RSASwiftGenerator_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD951CD399E7B98E6E27AAE9481735FE /* Build configuration list for PBXNativeTarget "Pods-RSASwiftGenerator_Example" */;
+			buildConfigurationList = 9DE1402F734DBEA6301E6B1BD9923E37 /* Build configuration list for PBXNativeTarget "Pods-RSASwiftGenerator_Example" */;
 			buildPhases = (
-				05BA755B3A27EAC365FDC099D100AA21 /* Headers */,
-				A6CE07D1C593B58D11B263361252A89D /* Sources */,
-				419289ABDC472C9634C5361F53E61C69 /* Frameworks */,
-				828F35AE787DC568E19AE2307E88CACF /* Resources */,
+				843EBBD04471B3BB4121F8086ADB08BA /* Headers */,
+				6F4669EB37247AF781E36426D7B6B833 /* Sources */,
+				E83657E4F143E0897843382EA3CABB3B /* Frameworks */,
+				EDCC29F907F9F7EFD332B5697DC8C0A9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3C7244781E1F4DEAE61A151252FCFF8B /* PBXTargetDependency */,
-				AFE19C5DD7146E7B80A6AB6D839189A1 /* PBXTargetDependency */,
+				5E37FB83472E2680978B55458320B1D4 /* PBXTargetDependency */,
 			);
 			name = "Pods-RSASwiftGenerator_Example";
 			productName = "Pods-RSASwiftGenerator_Example";
@@ -368,13 +266,13 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = EAE75A6598B8AE6356143EB8DB90ACF6 /* Products */;
+			productRefGroup = 4F736177724753ACAF742469655A441C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F873DBDB75724609A91372EB5EBD847 /* CommonCryptoModule */,
 				98FE381A054BDB07489643FAC9DCDFA6 /* Pods-RSASwiftGenerator_Example */,
 				5FDA07FFD914173CBC8371EC756BDA0A /* RSASwiftGenerator */,
 			);
@@ -382,145 +280,54 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		828F35AE787DC568E19AE2307E88CACF /* Resources */ = {
+		93A00B71B9FEB99D7D88CD055BA18E77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0310FE2CA16DEBCFAFC4224E23210AF5 /* CommonCryptoBridge.h in Resources */,
+				5DBCC09CCB8237CA2CC0338FB40FE997 /* module.modulemap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82FF83D2E7E157AA58EDD67EB05B700C /* Resources */ = {
+		EDCC29F907F9F7EFD332B5697DC8C0A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B04F79603A98D8EF7E1821428A621BA7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				024EFE6684B07E3438702307F4B76FA6 /* CommonCryptoBridge.h in Resources */,
-				3A885DA4B95E2D082A0A4E9743272953 /* module.modulemap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3331BD8DE2B5A1402C21CB01148AF9EC /* Sources */ = {
+		6F4669EB37247AF781E36426D7B6B833 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D05CCB577C2F7FDDA78462333AFAB8 /* CommonCryptoModule-dummy.m in Sources */,
-				E1CD1C73391BFC3566325208FA71D369 /* Empty.swift in Sources */,
+				C1F6700BB47F2D8E41B178C4869D78E1 /* Pods-RSASwiftGenerator_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43F5C439EA4416AEE232996377A29B84 /* Sources */ = {
+		B0C28BEE103B50C19664929D692271FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DCAF2E4D0257FB1082CA807E127885C /* RSASwiftGenerator-dummy.m in Sources */,
-				31049DD4069495FA490E3745644739A7 /* RSASwiftGenerator.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A6CE07D1C593B58D11B263361252A89D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C36C4FF128ECFFE5A8962B9A58EF87D /* Pods-RSASwiftGenerator_Example-dummy.m in Sources */,
+				FE159FD4B5536A2D0A9B2BDFEAE312DE /* RSASwiftGenerator-dummy.m in Sources */,
+				02517146ED38E07E46634380257579A6 /* RSASwiftGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3C7244781E1F4DEAE61A151252FCFF8B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CommonCryptoModule;
-			target = 2F873DBDB75724609A91372EB5EBD847 /* CommonCryptoModule */;
-			targetProxy = DDF32F40C2F0CFE86B11A9DEDFAA1E3C /* PBXContainerItemProxy */;
-		};
-		AFE19C5DD7146E7B80A6AB6D839189A1 /* PBXTargetDependency */ = {
+		5E37FB83472E2680978B55458320B1D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RSASwiftGenerator;
 			target = 5FDA07FFD914173CBC8371EC756BDA0A /* RSASwiftGenerator */;
-			targetProxy = 83A2C41D96EB372963AC9E43D7040311 /* PBXContainerItemProxy */;
-		};
-		E50877F75C4F565BDBE9C11056822F5C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CommonCryptoModule;
-			target = 2F873DBDB75724609A91372EB5EBD847 /* CommonCryptoModule */;
-			targetProxy = 324B48F1FB668845DB583DDDE07008DF /* PBXContainerItemProxy */;
+			targetProxy = 163904B3EF7CCE630A9BC0E034100B30 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0992FE72083F06387B64E5BCD8C4EDBB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4CCB3EE920BEA9319B57D67C13F4A3C /* RSASwiftGenerator.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator.modulemap";
-				PRODUCT_MODULE_NAME = RSASwiftGenerator;
-				PRODUCT_NAME = RSASwiftGenerator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		16CA76DA6C392CD225CB472FED93088E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4CCB3EE920BEA9319B57D67C13F4A3C /* RSASwiftGenerator.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator.modulemap";
-				PRODUCT_MODULE_NAME = RSASwiftGenerator;
-				PRODUCT_NAME = RSASwiftGenerator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -585,7 +392,73 @@
 			};
 			name = Debug;
 		};
-		4ED529C207A6028C1BACE71F215A2040 /* Debug */ = {
+		1A7881D2B3C0082551C483A418B512BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 778A6A9741E1AA8A0152AA605623D8C0 /* RSASwiftGenerator.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator.modulemap";
+				PRODUCT_MODULE_NAME = RSASwiftGenerator;
+				PRODUCT_NAME = RSASwiftGenerator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DA7005CC4BF14C9FAF7C62A692A6370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8242C9298586E92D2E883A87993C1AC3 /* Pods-RSASwiftGenerator_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RSASwiftGenerator_Example/Pods-RSASwiftGenerator_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RSASwiftGenerator_Example/Pods-RSASwiftGenerator_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60EA4870E8D11D05DA98217BCC35E8AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15E3455281480E7D64B51CCEE96FA9B2 /* Pods-RSASwiftGenerator_Example.debug.xcconfig */;
 			buildSettings = {
@@ -619,9 +492,9 @@
 			};
 			name = Debug;
 		};
-		7C1EF4F0393FCC3DE6A41168388CDFC7 /* Debug */ = {
+		6A22C815AED6A80AA76252E422817026 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BB7F10E5AEB86A9AEC9D36BC888B1F7 /* CommonCryptoModule.xcconfig */;
+			baseConfigurationReference = 1DAE6E0D80389C622D7CAC99B9E8AAFC /* RSASwiftGenerator.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -632,45 +505,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CommonCryptoModule/CommonCryptoModule-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CommonCryptoModule/CommonCryptoModule-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CommonCryptoModule/CommonCryptoModule.modulemap";
-				PRODUCT_MODULE_NAME = CommonCryptoModule;
-				PRODUCT_NAME = CommonCryptoModule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		99EFEEEA9B64CFE03FA72092C8FEB579 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BB7F10E5AEB86A9AEC9D36BC888B1F7 /* CommonCryptoModule.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CommonCryptoModule/CommonCryptoModule-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CommonCryptoModule/CommonCryptoModule-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CommonCryptoModule/CommonCryptoModule.modulemap";
-				PRODUCT_MODULE_NAME = CommonCryptoModule;
-				PRODUCT_NAME = CommonCryptoModule;
+				MODULEMAP_FILE = "Target Support Files/RSASwiftGenerator/RSASwiftGenerator.modulemap";
+				PRODUCT_MODULE_NAME = RSASwiftGenerator;
+				PRODUCT_NAME = RSASwiftGenerator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -742,53 +584,9 @@
 			};
 			name = Release;
 		};
-		D72762427181C927A694440CC994BC22 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8242C9298586E92D2E883A87993C1AC3 /* Pods-RSASwiftGenerator_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RSASwiftGenerator_Example/Pods-RSASwiftGenerator_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RSASwiftGenerator_Example/Pods-RSASwiftGenerator_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25BB4A5209C7FEAA43A19E72B01A76AA /* Build configuration list for PBXNativeTarget "CommonCryptoModule" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7C1EF4F0393FCC3DE6A41168388CDFC7 /* Debug */,
-				99EFEEEA9B64CFE03FA72092C8FEB579 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -798,20 +596,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0DF415DD3F124644F3BF88A309D56A3 /* Build configuration list for PBXNativeTarget "RSASwiftGenerator" */ = {
+		66FAF08CDE0838E1A26FC12BCE557F90 /* Build configuration list for PBXNativeTarget "RSASwiftGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				16CA76DA6C392CD225CB472FED93088E /* Debug */,
-				0992FE72083F06387B64E5BCD8C4EDBB /* Release */,
+				1A7881D2B3C0082551C483A418B512BC /* Debug */,
+				6A22C815AED6A80AA76252E422817026 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD951CD399E7B98E6E27AAE9481735FE /* Build configuration list for PBXNativeTarget "Pods-RSASwiftGenerator_Example" */ = {
+		9DE1402F734DBEA6301E6B1BD9923E37 /* Build configuration list for PBXNativeTarget "Pods-RSASwiftGenerator_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4ED529C207A6028C1BACE71F215A2040 /* Debug */,
-				D72762427181C927A694440CC994BC22 /* Release */,
+				60EA4870E8D11D05DA98217BCC35E8AC /* Debug */,
+				5DA7005CC4BF14C9FAF7C62A692A6370 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
