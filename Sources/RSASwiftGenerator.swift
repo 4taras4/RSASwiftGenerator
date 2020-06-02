@@ -155,10 +155,8 @@ public class RSASwiftGenerator: NSObject {
                 }
                 let plainText = (messageData as NSData).bytes.bindMemory(to: UInt8.self, capacity: messageData.count)
                 let plainTextLen = messageData.count
-                var cipherData = Data(count: SecKeyGetBlockSize(publicKeyRef))
-                let cipherText = cipherData.withUnsafeMutableBytes({ (bytes: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8> in
-                    return bytes
-                })
+                let cipherData = Data(count: SecKeyGetBlockSize(publicKeyRef))
+                let cipherText: UnsafeMutablePointer<UInt8> = cipherData.withUnsafeBytes { $0.load(as: UnsafeMutablePointer<UInt8>.self) }
                 var cipherTextLen = cipherData.count
                 let status = SecKeyEncrypt(publicKeyRef, .PKCS1, plainText, plainTextLen, cipherText, &cipherTextLen)
                 // analyze results and call the completion in main thread
@@ -178,9 +176,7 @@ public class RSASwiftGenerator: NSObject {
                 let encryptedText = (encryptedData as NSData).bytes.bindMemory(to: UInt8.self, capacity: encryptedData.count)
                 let encryptedTextLen = encryptedData.count
                 var plainData = Data(count: kRSASwiftGeneratorCypheredBufferSize)
-                let plainText = plainData.withUnsafeMutableBytes({ (bytes: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8> in
-                    return bytes
-                })
+                let plainText: UnsafeMutablePointer<UInt8> = plainData.withUnsafeBytes { $0.load(as: UnsafeMutablePointer<UInt8>.self) }
                 var plainTextLen = plainData.count
                 
                 let status = SecKeyDecrypt(privateKeyRef, .PKCS1, encryptedText, encryptedTextLen, plainText, &plainTextLen)
@@ -210,24 +206,20 @@ public class RSASwiftGenerator: NSObject {
             if let privateKeyRef = self.getPrivateKeyReference() {
                 // result data
                 var resultData = Data(count: SecKeyGetBlockSize(privateKeyRef))
-                let resultPointer = resultData.withUnsafeMutableBytes({ (bytes: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8> in
-                    return bytes
-                })
+                let resultPointer: UnsafeMutablePointer<UInt8> = resultData.withUnsafeBytes { $0.load(as: UnsafeMutablePointer<UInt8>.self) }
                 var resultLength = resultData.count
                 
                 if let plainData = message.data(using: String.Encoding.utf8) {
                     // generate hash of the plain data to sign
-                    var hashData = Data(count: Int(CC_SHA1_DIGEST_LENGTH))
-                    let hash = hashData.withUnsafeMutableBytes({ (bytes: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8> in
-                        return bytes
-                    })
+                    let hashData = Data(count: Int(CC_SHA1_DIGEST_LENGTH))
+                    let hash: UnsafeMutablePointer<UInt8> = hashData.withUnsafeBytes { $0.load(as: UnsafeMutablePointer<UInt8>.self) }
                     CC_SHA1((plainData as NSData).bytes.bindMemory(to: Void.self, capacity: plainData.count), CC_LONG(plainData.count), hash)
                     
                     // sign the hash
                     let status = SecKeyRawSign(privateKeyRef, SecPadding.PKCS1SHA1, hash, hashData.count, resultPointer, &resultLength)
                     if status != errSecSuccess { error = .unableToEncrypt }
                     else { resultData.count = resultLength }
-                    hash.deinitialize(count: hashData.count)
+//                    hash.deinitialize(count: hashData.count)
                 } else { error = .wrongInputDataFormat }
                 
                 // analyze results and call the completion in main thread
@@ -249,10 +241,8 @@ public class RSASwiftGenerator: NSObject {
             
             if let publicKeyRef = self.getPublicKeyReference() {
                 // hash data
-                var hashData = Data(count: Int(CC_SHA1_DIGEST_LENGTH))
-                let hash = hashData.withUnsafeMutableBytes({ (bytes: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8> in
-                    return bytes
-                })
+                let hashData = Data(count: Int(CC_SHA1_DIGEST_LENGTH))
+                let hash: UnsafeMutablePointer<UInt8> = hashData.withUnsafeBytes { $0.load(as: UnsafeMutablePointer<UInt8>.self) }
                 CC_SHA1((data as NSData).bytes.bindMemory(to: Void.self, capacity: data.count), CC_LONG(data.count), hash)
                 // input and output data
                 let signaturePointer = (signatureData as NSData).bytes.bindMemory(to: UInt8.self, capacity: signatureData.count)
